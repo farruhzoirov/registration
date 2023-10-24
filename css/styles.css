@@ -25,6 +25,7 @@ html {
  body {
      display: flex;
      flex-direction: column;
+     overflow-x: hidden;
      background-color: #ffffff;
      background-image: url("../img/main-bg.jpg");
      background-repeat: no-repeat;
@@ -150,7 +151,7 @@ input,input:focus {
     font-size: 38px;
     font-weight: 700;
     line-height: normal;
-    white-space: nowrap;
+
 }
 
 .registration-main__top span {
@@ -169,6 +170,10 @@ input,input:focus {
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+    background-image: url("../img/tabs-line.svg");
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: center 23px;
 }
 
 
@@ -179,10 +184,7 @@ input,input:focus {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-image: url("../img/tabs-line.svg");
-    background-size: 100% 1px;
-    background-repeat: no-repeat;
-    background-position: center 23px;
+    transform: translateX(-10px);
 }
 
 .registration-tabs__item:hover span {
@@ -206,12 +208,14 @@ input,input:focus {
 
 
 .registration-tabs__item:not(:last-child) {
-    margin-right: 42px;
+    margin-right: 40px;
 }
 
 .registration-tabs__symbol {
     width: 43px;
     height: 43px;
+    display: flex;
+    justify-content: center;
     border-radius: 50%;
     padding: 9.5px;
     background-color: #f3f4f8;
@@ -243,6 +247,7 @@ input,input:focus {
 .registration-main__form {
     width: 100%;
     max-width: 490px;
+    min-height: 670px;
     background-color: #ffffff;
     margin-left: auto;
     margin-right: auto;
@@ -330,6 +335,82 @@ input,input:focus {
 
 /*Registration  main media queries*/
 
+@media only screen and (max-width: 625px) {
+    body {
+        background-position: left top;
+    }
+
+    .registration-main-title {
+        font-size: 32px;
+
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+    .registration-main-title {
+        font-size: 28px;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 520px) {
+    .registration-main-title {
+        font-size: 28px;
+
+    }
+
+    .registration-main-form__title {
+        font-size: 18px;
+    }
+
+
+    .registration-tabs__item:not(:last-child) {
+        margin-right: 35px;
+    }
+
+
+}
+
+@media only screen and (max-width: 510px) {
+    .registration-main-title {
+        font-size: 28px;
+
+    }
+
+    .registration-main-form__title {
+        font-size: 16px;
+    }
+
+
+    .registration-tabs__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+
+}
+
+@media only screen and (max-width: 510px) {
+    .registration-main-title {
+        font-size: 28px;
+
+    }
+
+    .registration-main-form__title {
+        font-size: 16px;
+    }
+
+
+    .registration-tabs__item:not(:last-child) {
+        margin-right: 22px;
+    }
+    .registration-tabs__item:last-child {
+        margin-right: 10px;
+    }
+
+}
 
 
 
