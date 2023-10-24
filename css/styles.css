@@ -599,7 +599,7 @@ input,input:focus {
         margin-right: 20px;
     }
     .registration-tabs__item:nth-child(1) {
-        margin-left: -15px;
+        margin-left: -20px;
     }
 
     .registration-tabs__item:nth-child(2) {
@@ -651,7 +651,7 @@ input,input:focus {
         margin-right: 20px;
     }
     .registration-tabs__item:nth-child(1) {
-        margin-left: -15px;
+        margin-left: -20px;
     }
 
     .registration-tabs__item:nth-child(2) {
