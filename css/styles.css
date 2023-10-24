@@ -165,12 +165,11 @@ input,input:focus {
 
 /*Tabs styles*/
 .registration-main__tabs {
+
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url("../img/tabs-line.svg");
-    background-repeat: no-repeat;
-    background-position: center 23px;
+
 
 }
 
@@ -179,6 +178,11 @@ input,input:focus {
 .registration-tabs__list {
     display: flex;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../img/tabs-line.svg");
+    background-repeat: no-repeat;
+    background-position: center 23px;
 }
 
 .registration-tabs__item:hover svg {
@@ -199,7 +203,7 @@ input,input:focus {
 
 
 .registration-tabs__item:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 42px;
 }
 
 .registration-tabs__symbol {
@@ -225,12 +229,6 @@ input,input:focus {
     font-weight: 400;
     line-height: 132%;
 }
-
-
-
-
-
-
 
 
 
@@ -324,6 +322,12 @@ input,input:focus {
     line-height: 132%;
     text-transform: uppercase;
 }
+
+
+/*Registration  main media queries*/
+
+
+
 
 
 
