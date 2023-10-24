@@ -608,6 +608,7 @@ input,input:focus {
 
     .registration-tabs__item:last-child {
         margin-right: 10px;
+        margin-left: 5px;
     }
 
     .registration-tabs__inner p {
@@ -652,6 +653,7 @@ input,input:focus {
     }
     .registration-tabs__item:not(:last-child) {
         margin-right: 20px;
+        margin-left: 5px;
     }
     .registration-tabs__item:nth-child(1) {
         margin-left: -30px;
@@ -705,6 +707,7 @@ input,input:focus {
 
     .registration-tabs__item:last-child {
         margin-right: 10px;
+        margin-left: 5px;
     }
 
     .registration-tabs__inner p {
