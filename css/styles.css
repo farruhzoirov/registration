@@ -702,7 +702,7 @@ input,input:focus {
     }
 
     .registration-tabs__item:nth-child(2) {
-        margin-left: 0;
+        margin-left: -5px;
     }
 
     .registration-tabs__item:last-child {
@@ -747,13 +747,61 @@ input,input:focus {
     }
     .registration-tabs__item:not(:last-child) {
         margin-right: 20px;
+        margin-left: 5px;
     }
     .registration-tabs__item:nth-child(1) {
         margin-left: -40px;
     }
 
     .registration-tabs__item:nth-child(2) {
-        margin-left: -5px;
+        margin-left: -8px;
+    }
+
+    .registration-tabs__inner p {
+        font-size: 12px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 367px) {
+    .registration-main__top div {
+        display: flex;
+        justify-content: center;
+        padding: 8px 8px;
+    }
+
+    .registration-main__top div strong {
+        font-size: 12px;
+        text-align: center;
+
+    }
+
+    .registration-main-title {
+        font-size: 24px;
+        text-align: center;
+
+    }
+
+    .registration-main-form__title {
+        font-size: 16px;
+    }
+
+
+    .registration-tabs__item:not(:last-child) {
+        margin-right: 20px;
+    }
+    .registration-tabs__item:not(:last-child) {
+        margin-right: 20px;
+        margin-left: 5px;
+    }
+    .registration-tabs__item:nth-child(1) {
+        margin-left: -45px;
+    }
+
+    .registration-tabs__item:nth-child(2) {
+        margin-left: -8px;
     }
 
     .registration-tabs__inner p {
