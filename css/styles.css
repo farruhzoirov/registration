@@ -650,16 +650,15 @@ input,input:focus {
     .registration-tabs__item:not(:last-child) {
         margin-right: 20px;
     }
+    .registration-tabs__item:not(:last-child) {
+        margin-right: 20px;
+    }
     .registration-tabs__item:nth-child(1) {
-        margin-left: -20px;
+        margin-left: -30px;
     }
 
     .registration-tabs__item:nth-child(2) {
-        margin-left: -10px;
-    }
-
-    .registration-tabs__item:last-child {
-        margin-right: 10px;
+        margin-left: 0;
     }
 
     .registration-tabs__inner p {
@@ -697,11 +696,11 @@ input,input:focus {
         margin-right: 20px;
     }
     .registration-tabs__item:nth-child(1) {
-        margin-left: -25px;
+        margin-left: -40px;
     }
 
     .registration-tabs__item:nth-child(2) {
-        margin-left: -12px;
+        margin-left: 0px;
     }
 
     .registration-tabs__item:last-child {
@@ -743,16 +742,15 @@ input,input:focus {
     .registration-tabs__item:not(:last-child) {
         margin-right: 20px;
     }
+    .registration-tabs__item:not(:last-child) {
+        margin-right: 20px;
+    }
     .registration-tabs__item:nth-child(1) {
         margin-left: -40px;
     }
 
     .registration-tabs__item:nth-child(2) {
-        margin-left: -15px;
-    }
-
-    .registration-tabs__item:last-child {
-        margin-right: 10px;
+        margin-left: -5px;
     }
 
     .registration-tabs__inner p {
