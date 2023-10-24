@@ -173,7 +173,7 @@ input,input:focus {
     background-image: url("../img/tabs-line.svg");
     background-size: 100% 1px;
     background-repeat: no-repeat;
-    background-position: center 23px;
+    background-position: center 24px;
 }
 
 
@@ -185,6 +185,9 @@ input,input:focus {
     margin-left: auto;
     margin-right: auto;
     transform: translateX(-10px);
+}
+.registration-tabs__item {
+    cursor: pointer;
 }
 
 .registration-tabs__item:hover span {
@@ -809,6 +812,15 @@ input,input:focus {
     }
 
 }
+
+
+
+
+
+
+
+
+
 
 
 
