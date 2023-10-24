@@ -228,7 +228,7 @@ input,input:focus {
     color:var(--ink-color)
 }
 
-.registration-tabs__symbol p {
+.registration-tabs__inner p {
     color: var(--black-color);
     text-align: center;
     font-family: var(--poppins-shrift);
@@ -374,9 +374,34 @@ input,input:focus {
 
 }
 
+
+
 @media only screen and (max-width: 510px) {
     .registration-main-title {
         font-size: 28px;
+
+    }
+
+    .registration-main-form__title {
+        font-size: 16px;
+    }
+
+
+    .registration-tabs__item:not(:last-child) {
+        margin-right: 27px;
+    }
+    .registration-tabs__item:nth-child(2) {
+        margin-left: -5px;
+    }
+    .registration-tabs__item:last-child {
+        margin-right: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 490px) {
+    .registration-main-title {
+        font-size: 24px;
 
     }
 
@@ -388,13 +413,20 @@ input,input:focus {
     .registration-tabs__item:not(:last-child) {
         margin-right: 30px;
     }
+    .registration-tabs__item:last-child {
+        margin-right: 10px;
+    }
 
+    .registration-tabs__inner p {
+       font-size: 13px;
+    }
 
 }
 
-@media only screen and (max-width: 510px) {
+
+@media only screen and (max-width: 470px) {
     .registration-main-title {
-        font-size: 28px;
+        font-size: 24px;
 
     }
 
@@ -406,11 +438,281 @@ input,input:focus {
     .registration-tabs__item:not(:last-child) {
         margin-right: 22px;
     }
+
+
+    .registration-tabs__item:nth-child(2) {
+        margin-left: -5px;
+    }
+
     .registration-tabs__item:last-child {
         margin-right: 10px;
     }
 
+    .registration-tabs__inner p {
+        font-size: 13px;
+    }
+
 }
+
+@media only screen and (max-width: 450px) {
+    .registration-main-title {
+        font-size: 24px;
+
+    }
+
+    .registration-main-form__title {
+        font-size: 16px;
+    }
+
+
+    .registration-tabs__item:not(:last-child) {
+        margin-right: 20px;
+    }
+
+
+    .registration-tabs__item:nth-child(2) {
+        margin-left: -8px;
+    }
+
+    .registration-tabs__item:last-child {
+        margin-right: 10px;
+    }
+
+    .registration-tabs__inner p {
+        font-size: 12px;
+    }
+
+}
+
+
+@media only screen and (max-width: 440px) {
+    .registration-main__top div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .registration-main__top div strong {
+        font-size: 14px;
+        text-align: center;
+
+    }
+
+    .registration-main-title {
+        font-size: 24px;
+
+    }
+
+    .registration-main-form__title {
+        font-size: 16px;
+    }
+
+
+    .registration-tabs__item:not(:last-child) {
+        margin-right: 20px;
+    }
+
+
+    .registration-tabs__item:nth-child(2) {
+        margin-left: -8px;
+    }
+
+    .registration-tabs__item:last-child {
+        margin-right: 10px;
+    }
+
+    .registration-tabs__inner p {
+        font-size: 12px;
+    }
+
+}
+
+
+@media only screen and (max-width: 430px) {
+    .registration-main__top div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .registration-main__top div strong {
+        font-size: 14px;
+        text-align: center;
+
+    }
+
+    .registration-main-title {
+        font-size: 24px;
+
+    }
+
+    .registration-main-form__title {
+        font-size: 16px;
+    }
+
+
+    .registration-tabs__item:not(:last-child) {
+        margin-right: 20px;
+    }
+    .registration-tabs__item:nth-child(1) {
+        margin-left: -12px;
+    }
+
+    .registration-tabs__item:nth-child(2) {
+        margin-left: -8px;
+    }
+
+    .registration-tabs__item:last-child {
+        margin-right: 10px;
+    }
+
+    .registration-tabs__inner p {
+        font-size: 12px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 410px) {
+    .registration-main__top div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .registration-main__top div strong {
+        font-size: 14px;
+        text-align: center;
+
+    }
+
+    .registration-main-title {
+        font-size: 24px;
+
+    }
+
+    .registration-main-form__title {
+        font-size: 16px;
+    }
+
+
+    .registration-tabs__item:not(:last-child) {
+        margin-right: 20px;
+    }
+    .registration-tabs__item:nth-child(1) {
+        margin-left: -15px;
+    }
+
+    .registration-tabs__item:nth-child(2) {
+        margin-left: -10px;
+    }
+
+    .registration-tabs__item:last-child {
+        margin-right: 10px;
+    }
+
+    .registration-tabs__inner p {
+        font-size: 12px;
+    }
+    .registration-main-form__top div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .registration-main-form__top div span {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 404px) {
+    .registration-main__top div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .registration-main__top div strong {
+        font-size: 14px;
+        text-align: center;
+
+    }
+
+    .registration-main-title {
+        font-size: 24px;
+        text-align: center;
+
+    }
+
+    .registration-main-form__title {
+        font-size: 16px;
+    }
+
+
+    .registration-tabs__item:not(:last-child) {
+        margin-right: 20px;
+    }
+    .registration-tabs__item:nth-child(1) {
+        margin-left: -15px;
+    }
+
+    .registration-tabs__item:nth-child(2) {
+        margin-left: -10px;
+    }
+
+    .registration-tabs__item:last-child {
+        margin-right: 10px;
+    }
+
+    .registration-tabs__inner p {
+        font-size: 12px;
+    }
+
+}
+
+
+@media only screen and (max-width: 391px) {
+    .registration-main__top div {
+        display: flex;
+        justify-content: center;
+        padding: 8px 12px;
+    }
+
+    .registration-main__top div strong {
+        font-size: 14px;
+        text-align: center;
+
+    }
+
+    .registration-main-title {
+        font-size: 24px;
+        text-align: center;
+
+    }
+
+    .registration-main-form__title {
+        font-size: 16px;
+    }
+
+
+    .registration-tabs__item:not(:last-child) {
+        margin-right: 20px;
+    }
+    .registration-tabs__item:nth-child(1) {
+        margin-left: -20px;
+    }
+
+    .registration-tabs__item:nth-child(2) {
+        margin-left: -15px;
+    }
+
+    .registration-tabs__item:last-child {
+        margin-right: 10px;
+    }
+
+    .registration-tabs__inner p {
+        font-size: 12px;
+    }
+
+}
+
 
 
 
