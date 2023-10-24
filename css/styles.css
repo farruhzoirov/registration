@@ -700,7 +700,7 @@ input,input:focus {
     }
 
     .registration-tabs__item:nth-child(2) {
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .registration-tabs__item:last-child {
