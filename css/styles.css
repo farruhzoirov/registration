@@ -13,6 +13,7 @@
 /*General styles*/
 html {
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 *,
@@ -74,6 +75,25 @@ input,input:focus {
     position: absolute;
     white-space: nowrap;
     width: 1px;
+}
+
+.button {
+    width: 100%;
+    max-width: 430px;
+    height: 54px;
+    padding: 15px;
+    border: 0;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: var(--button-color);
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button:active {
+    opacity: 0.6;
 }
 
 
@@ -143,6 +163,10 @@ input,input:focus {
 }
 
 
+/*Tabs styles*/
+
+
+
 /*Registration main form styles*/
 
 
@@ -194,6 +218,42 @@ input,input:focus {
     font-size: 20px;
     font-weight: 600;
     line-height: 132%;
+}
+.registration-form__wrapper {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.form-registration__label {
+    color: #48635b;
+   font-family: var(--poppins-shrift);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 132%;
+}
+
+.registration-form__input {
+    width: 100%;
+    max-width: 430px;
+    height: 48px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    border: 1px solid #bed4da;
+    background-color: #f3f7f8;
+    color: var(--black-color);
+    font-family: var(--poppins-shrift);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 132%;
+}
+
+.registration-main__button span {
+    color: #ffffff;
+    font-family: var(--poppins-shrift);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 132%;
+    text-transform: uppercase;
 }
 
 
