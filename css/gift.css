@@ -425,7 +425,7 @@ input,input:focus {
     height: 100%;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .selector-label__inner--1,.selector-label__inner--2 {
@@ -454,6 +454,7 @@ input,input:focus {
     display: block;
     width: 22px;
     height: 22px;
+    margin-right: 12px;
     border-radius: 50%;
     background-color: #ffffff;
     border: 2px;
@@ -533,6 +534,18 @@ input,input:focus {
     line-height: 132%;
     text-transform: uppercase;
     text-align: center;
+}
+
+
+/*After file uploaded*/
+
+.fileuploaded-wrapper {
+    display: none;
+
+}
+
+.fileuploaded-wrapper svg {
+    color: var(--ink-color);
 }
 
 
