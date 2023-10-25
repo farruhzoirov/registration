@@ -8,5 +8,5 @@ PhoneMask();
 Modal();
 Register();
 Payment();
-Auth();
+// Auth();
 

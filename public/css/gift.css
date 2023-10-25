@@ -108,6 +108,7 @@ input, input:focus {
     background-image: url("../img/gift-bg.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: auto;
 }
 
 .gift-wrapper__inner {
