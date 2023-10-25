@@ -434,6 +434,11 @@ input,input:focus {
         margin-right: auto;
     }
 
+    .registration-main__form {
+        padding: 20px;
+
+    }
+
     .registration-main-title {
         font-size: 32px;
 
