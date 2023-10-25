@@ -526,6 +526,9 @@ input,input:focus {
     .registration-main-form__top div span {
         font-size: 14px;
     }
+    .registration-tabs__list {
+        transform: translateX(5px);
+    }
 
 }
 
