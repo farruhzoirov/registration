@@ -185,13 +185,14 @@ input,input:focus {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    max-width: 370px;
     margin-left: auto;
     margin-right: auto;
-    transform: translateX(-10px);
 }
 .registration-tabs__item {
+    width: 26%;
     cursor: pointer;
-    width: 30%;
+    white-space: nowrap;
 }
 
 .registration-tabs__item:hover span {
@@ -245,8 +246,6 @@ input,input:focus {
 }
 
 
-
-
 /*Registration main form styles*/
 
 
@@ -257,7 +256,7 @@ input,input:focus {
     background-color: #ffffff;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px;
+    padding: 20px;
     border-radius: 24px;
 }
 
@@ -358,25 +357,16 @@ input,input:focus {
 @media only screen and (max-width: 540px) {
     .registration-main-title {
         font-size: 28px;
-
     }
-
 }
 
 
 @media only screen and (max-width: 520px) {
     .registration-main-title {
         font-size: 28px;
-
     }
-
     .registration-main-form__title {
         font-size: 18px;
-    }
-
-
-    .registration-tabs__item:not(:last-child) {
-        margin-right: 35px;
     }
 
 
@@ -395,16 +385,6 @@ input,input:focus {
     }
 
 
-    .registration-tabs__item:not(:last-child) {
-        margin-right: 27px;
-    }
-    .registration-tabs__item:nth-child(2) {
-        margin-left: -5px;
-    }
-    .registration-tabs__item:last-child {
-        margin-right: 10px;
-    }
-
 }
 
 @media only screen and (max-width: 490px) {
@@ -415,18 +395,6 @@ input,input:focus {
 
     .registration-main-form__title {
         font-size: 16px;
-    }
-
-
-    .registration-tabs__item:not(:last-child) {
-        margin-right: 30px;
-    }
-    .registration-tabs__item:last-child {
-        margin-right: 10px;
-    }
-
-    .registration-tabs__inner p {
-       font-size: 13px;
     }
 
 }
@@ -442,19 +410,6 @@ input,input:focus {
         font-size: 16px;
     }
 
-
-    .registration-tabs__item:not(:last-child) {
-        margin-right: 22px;
-    }
-
-
-    .registration-tabs__item:nth-child(2) {
-        margin-left: -5px;
-    }
-
-    .registration-tabs__item:last-child {
-        margin-right: 10px;
-    }
 
     .registration-tabs__inner p {
         font-size: 13px;
@@ -472,19 +427,6 @@ input,input:focus {
         font-size: 16px;
     }
 
-
-    .registration-tabs__item:not(:last-child) {
-        margin-right: 20px;
-    }
-
-
-    .registration-tabs__item:nth-child(2) {
-        margin-left: -8px;
-    }
-
-    .registration-tabs__item:last-child {
-        margin-right: 10px;
-    }
 
     .registration-tabs__inner p {
         font-size: 12px;
@@ -515,19 +457,6 @@ input,input:focus {
     }
 
 
-    .registration-tabs__item:not(:last-child) {
-        margin-right: 20px;
-    }
-
-
-    .registration-tabs__item:nth-child(2) {
-        margin-left: -8px;
-    }
-
-    .registration-tabs__item:last-child {
-        margin-right: 10px;
-    }
-
     .registration-tabs__inner p {
         font-size: 12px;
     }
@@ -557,21 +486,6 @@ input,input:focus {
     }
 
 
-    .registration-tabs__item:not(:last-child) {
-        margin-right: 20px;
-    }
-    .registration-tabs__item:nth-child(1) {
-        margin-left: -12px;
-    }
-
-    .registration-tabs__item:nth-child(2) {
-        margin-left: -8px;
-    }
-
-    .registration-tabs__item:last-child {
-        margin-right: 10px;
-    }
-
     .registration-tabs__inner p {
         font-size: 12px;
     }
@@ -599,23 +513,6 @@ input,input:focus {
 
     .registration-main-form__title {
         font-size: 16px;
-    }
-
-
-    .registration-tabs__item:not(:last-child) {
-        margin-right: 20px;
-    }
-    .registration-tabs__item:nth-child(1) {
-        margin-left: -20px;
-    }
-
-    .registration-tabs__item:nth-child(2) {
-        margin-left: -10px;
-    }
-
-    .registration-tabs__item:last-child {
-        margin-right: 10px;
-        margin-left: 5px;
     }
 
     .registration-tabs__inner p {
@@ -654,22 +551,6 @@ input,input:focus {
         font-size: 16px;
     }
 
-
-    .registration-tabs__item:not(:last-child) {
-        margin-right: 20px;
-    }
-    .registration-tabs__item:not(:last-child) {
-        margin-right: 20px;
-        margin-left: 5px;
-    }
-    .registration-tabs__item:nth-child(1) {
-        margin-left: -30px;
-    }
-
-    .registration-tabs__item:nth-child(2) {
-        margin-left: 0;
-    }
-
     .registration-tabs__inner p {
         font-size: 12px;
     }
@@ -693,29 +574,12 @@ input,input:focus {
     .registration-main-title {
         font-size: 24px;
         text-align: center;
-
     }
 
     .registration-main-form__title {
         font-size: 16px;
     }
 
-
-    .registration-tabs__item:not(:last-child) {
-        margin-right: 20px;
-    }
-    .registration-tabs__item:nth-child(1) {
-        margin-left: -40px;
-    }
-
-    .registration-tabs__item:nth-child(2) {
-        margin-left: -5px;
-    }
-
-    .registration-tabs__item:last-child {
-        margin-right: 10px;
-        margin-left: 5px;
-    }
 
     .registration-tabs__inner p {
         font-size: 12px;
@@ -749,21 +613,6 @@ input,input:focus {
     }
 
 
-    .registration-tabs__item:not(:last-child) {
-        margin-right: 20px;
-    }
-    .registration-tabs__item:not(:last-child) {
-        margin-right: 20px;
-        margin-left: 5px;
-    }
-    .registration-tabs__item:nth-child(1) {
-        margin-left: -40px;
-    }
-
-    .registration-tabs__item:nth-child(2) {
-        margin-left: -8px;
-    }
-
     .registration-tabs__inner p {
         font-size: 12px;
     }
@@ -793,22 +642,6 @@ input,input:focus {
 
     .registration-main-form__title {
         font-size: 16px;
-    }
-
-
-    .registration-tabs__item:not(:last-child) {
-        margin-right: 20px;
-    }
-    .registration-tabs__item:not(:last-child) {
-        margin-right: 20px;
-        margin-left: 5px;
-    }
-    .registration-tabs__item:nth-child(1) {
-        margin-left: -45px;
-    }
-
-    .registration-tabs__item:nth-child(2) {
-        margin-left: -8px;
     }
 
     .registration-tabs__inner p {
