@@ -256,7 +256,7 @@ input,input:focus {
     background-color: #ffffff;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: 30px;
     border-radius: 24px;
 }
 
@@ -338,6 +338,84 @@ input,input:focus {
     text-transform: uppercase;
 }
 
+/*Modals styles*/
+
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    overflow: auto;
+}
+
+.modal-container--open {
+    display: block;
+}
+
+.modal-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px;
+}
+
+.modal__inner {
+    flex-grow: 1;
+}
+
+.modal__inner h1 {
+    font-size: 16px;
+    text-align: center;
+    font-family: var(--unbounded-shrift);
+    color:var(--ink-color);
+    margin-bottom: 50px;
+}
+
+.modal__inner strong {
+    font-size: 16px;
+    text-align: center;
+    font-family: var(--unbounded-shrift);
+}
+
+
+.modal__button {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Registration  main media queries*/
 
@@ -369,7 +447,6 @@ input,input:focus {
         font-size: 18px;
     }
 
-
 }
 
 
@@ -383,7 +460,6 @@ input,input:focus {
     .registration-main-form__title {
         font-size: 16px;
     }
-
 
 }
 
@@ -485,13 +561,10 @@ input,input:focus {
         font-size: 16px;
     }
 
-
     .registration-tabs__inner p {
         font-size: 12px;
     }
-
 }
-
 
 
 @media only screen and (max-width: 410px) {
@@ -661,7 +734,6 @@ input,input:focus {
     .registration-tabs__item:not(:last-child) {
         margin-right: 25px;
     }
-
 
 }
 
