@@ -843,9 +843,14 @@ input,input:focus {
 }
 
 @media only screen and (max-width: 810px) {
+    .container {
+        padding: 0;
+    }
+
     .inner-left__tariff h1 {
         font-size: 16px;
     }
+
     .inner-left__price {
         font-size: 20px;
     }
@@ -854,9 +859,10 @@ input,input:focus {
         font-size: 14px;
     }
 
-    .item-numbers{
+    .item-numbers {
         font-size: 16px;
     }
+
     .payment-card__info strong {
         font-size: 14px;
     }
@@ -868,6 +874,7 @@ input,input:focus {
     .payment-card__price span {
         font-size: 16px;
     }
+
     .selector-label strong {
         color: var(--black-color);
         font-family: var(--poppins-shrift);
@@ -877,261 +884,318 @@ input,input:focus {
         white-space: nowrap;
     }
 
+    .gift-inner__right {
+        padding: 15px;
+
+    }
 }
 
-
-@media only screen and (max-width: 770px) {
-    .gift-wrapper {
-        width: 100%;
-        height: 100%;
-        padding: 40px 20px;
-
-    }
+    @media only screen and (max-width: 770px) {
 
 
-    .inner-left__tariff h1 {
-        font-size: 16px;
-    }
-    .inner-left__price {
-        font-size: 20px;
-    }
+        .gift-wrapper {
+            width: 100%;
+            height: 100%;
+            padding: 40px 20px;
 
-    .left-text__wrapper p {
-        font-size: 14px;
-    }
-
-    .item-numbers{
-        font-size: 16px;
-    }
-    .payment-card__info strong {
-        font-size: 20px;
-    }
-
-    .payment-card__info span {
-        font-size: 16px;
-    }
-
-    .payment-card__price span {
-        font-size: 18px;
-    }
-    .selector-label strong {
-        color: var(--black-color);
-        font-family: var(--poppins-shrift);
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 132%;
-        white-space: nowrap;
-    }
-
-    .left-item__inner {
-        display: flex;
-        flex-direction: column;
-        margin-top: 18px;
-    }
-    .payment-card {
-        width: 100%;
-        max-width:100%;
-        padding: 12px;
-        margin-right: 12px;
-        margin-bottom: 18px;
-    }
+        }
 
 
-}
+        .inner-left__tariff h1 {
+            font-size: 16px;
+        }
 
+        .inner-left__price {
+            font-size: 20px;
+        }
 
-@media only screen and (max-width: 625px) {
+        .left-text__wrapper p {
+            font-size: 14px;
+        }
 
+        .item-numbers {
+            font-size: 16px;
+        }
 
-    .gift-wrapper {
-        width: 100%;
-        height: 100%;
-        padding: 20px 15px;
+        .payment-card__info strong {
+            font-size: 20px;
+        }
+
+        .payment-card__info span {
+            font-size: 16px;
+        }
+
+        .payment-card__price span {
+            font-size: 18px;
+        }
+
+        .selector-label strong {
+            color: var(--black-color);
+            font-family: var(--poppins-shrift);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 132%;
+            white-space: nowrap;
+        }
+
+        .left-item__inner {
+            display: flex;
+            flex-direction: column;
+            margin-top: 18px;
+        }
+
+        .payment-card {
+            width: 100%;
+            max-width: 100%;
+            padding: 12px;
+            margin-right: 12px;
+            margin-bottom: 18px;
+        }
+
 
     }
 
-    .gift-inner__left {
-        padding: 20px;
-    }
-    .inner-left-card__top {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        padding: 14px 24px;
+
+    @media only screen and (max-width: 625px) {
+        .gift-wrapper {
+            width: 100%;
+            height: 100%;
+            padding: 20px 15px;
+
+        }
+
+        .gift-inner__left {
+            padding: 20px;
+        }
+
+        .inner-left-card__top {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 14px 24px;
+
+        }
+
+        .selector-label__container {
+            width: 100%;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .selector-label__wrapper {
+            margin-bottom: 12px;
+        }
+
+        .inner-left__user {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .inner-left__tariff h1 {
+            font-size: 16px;
+        }
+
+        .inner-left__price {
+            font-size: 20px;
+        }
+
+        .left-text__wrapper p {
+            font-size: 14px;
+        }
+
+        .item-numbers {
+            font-size: 16px;
+        }
+
+        .payment-card__info strong {
+            font-size: 20px;
+        }
+
+        .payment-card__info span {
+            font-size: 16px;
+        }
+
+        .payment-card__price span {
+            font-size: 18px;
+        }
+
+        .selector-label strong {
+            color: var(--black-color);
+            font-family: var(--poppins-shrift);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 132%;
+            white-space: nowrap;
+        }
+
+        .left-item__inner {
+            display: flex;
+            flex-direction: column;
+            margin-top: 18px;
+        }
+
+        .payment-card {
+            width: 100%;
+            max-width: 100%;
+            padding: 12px;
+            margin-right: 12px;
+            margin-bottom: 18px;
+        }
+
+        .gift-right__helper {
+            padding: 21px 22px;
+        }
+
+        .gift-right__helper div {
+            flex-grow: 1;
+        }
+
+        .telegram__Link {
+            width: 100%;
+            max-width: 280px;
+            height: 54px;
+        }
 
     }
-    .selector-label__container {
-        width: 100%;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .selector-label__wrapper {
-        margin-bottom: 12px;
-    }
-
-    .inner-left__user {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-
-    .inner-left__tariff h1 {
-        font-size: 16px;
-    }
-    .inner-left__price {
-        font-size: 20px;
-    }
-
-    .left-text__wrapper p {
-        font-size: 14px;
-    }
-
-    .item-numbers{
-        font-size: 16px;
-    }
-    .payment-card__info strong {
-        font-size: 20px;
-    }
-
-    .payment-card__info span {
-        font-size: 16px;
-    }
-
-    .payment-card__price span {
-        font-size: 18px;
-    }
-    .selector-label strong {
-        color: var(--black-color);
-        font-family: var(--poppins-shrift);
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 132%;
-        white-space: nowrap;
-    }
-
-    .left-item__inner {
-        display: flex;
-        flex-direction: column;
-        margin-top: 18px;
-    }
-    .payment-card {
-        width: 100%;
-        max-width:100%;
-        padding: 12px;
-        margin-right: 12px;
-        margin-bottom: 18px;
-    }
 
 
 
 
-}
+    @media only screen and (max-width: 460px) {
+        .gift-wrapper {
+            width: 100%;
+            height: 100%;
+            padding: 20px 15px;
 
+        }
 
+        .gift-inner__left {
+            padding: 15px;
+        }
 
+        .inner-left-card__top {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 14px 24px;
 
-@media only screen and (max-width: 460px) {
-    .gift-wrapper {
-        width: 100%;
-        height: 100%;
-        padding: 20px 15px;
+        }
 
-    }
+        .selector-label__container {
+            width: 100%;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
 
-    .gift-inner__left {
-        padding: 20px;
-    }
-    .inner-left-card__top {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        padding: 14px 24px;
+        }
 
-    }
-    .selector-label__container {
-        width: 100%;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
+        .inner-left__user {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
 
-    }
-    .inner-left__user {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-    }
+        .inner-left__tariff h1 {
+            font-size: 16px;
+        }
 
-    .inner-left__tariff h1 {
-        font-size: 16px;
-    }
-    .inner-left__price {
-        font-size: 20px;
-    }
+        .inner-left__price {
+            font-size: 20px;
+        }
 
-    .left-text__wrapper p {
-        font-size: 14px;
-    }
+        .left-text__wrapper p {
+            font-size: 14px;
+        }
 
-    .item-numbers{
-        font-size: 16px;
-    }
-    .payment-card__info strong {
-        font-size: 20px;
-    }
+        .item-numbers {
+            font-size: 16px;
+        }
 
-    .payment-card__info span {
-        font-size: 16px;
-    }
+        .payment-card__info strong {
+            font-size: 20px;
+        }
 
-    .payment-card__price span {
-        font-size: 18px;
-    }
-    .selector-label strong {
-        color: var(--black-color);
-        font-family: var(--poppins-shrift);
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 132%;
-        white-space: nowrap;
-    }
+        .payment-card__info span {
+            font-size: 16px;
+        }
 
-    .left-item__inner {
-        display: flex;
-        flex-direction: column;
-        margin-top: 18px;
-    }
-    .payment-card {
-        width: 100%;
-        max-width:100%;
-        padding: 12px;
-        margin-right: 12px;
-        margin-bottom: 18px;
-    }
+        .payment-card__price span {
+            font-size: 18px;
+        }
 
-    .userinfo__wrapper strong {
-        font-size: 14px;
-    }
-    .userinfo__wrapper span {
-        font-size: 14px;
-    }
-    .time__wrapper {
-        width: 100%;
-        max-width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .inner-left__tariff h1 {
-        font-size: 14px;
-    }
-    .inner-left__tariff span {
-        font-size: 14px;
-    }
-    .inner-left__price {
-        font-size: 16px;
-    }
+        .selector-label strong {
+            color: var(--black-color);
+            font-family: var(--poppins-shrift);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 132%;
+            white-space: nowrap;
+        }
 
-}
+        .left-item__inner {
+            display: flex;
+            flex-direction: column;
+            margin-top: 18px;
+        }
+
+        .payment-card {
+            width: 100%;
+            max-width: 100%;
+            padding: 12px;
+            margin-right: 12px;
+            margin-bottom: 18px;
+        }
+
+        .userinfo__wrapper strong {
+            font-size: 14px;
+        }
+
+        .userinfo__wrapper span {
+            font-size: 14px;
+        }
+
+        .time__wrapper {
+            width: 100%;
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .inner-left__tariff h1 {
+            font-size: 14px;
+        }
+
+        .inner-left__tariff span {
+            font-size: 14px;
+        }
+
+        .inner-left__price {
+            font-size: 16px;
+        }
+
+        .payment-card__info strong {
+            font-size: 16px;
+        }
+
+        .gift-right__helper h2 {
+            font-size: 18px;
+
+        }
+
+        .telegram__Link span {
+            font-size: 16px;
+        }
+
+        .gift-right__helper p {
+            font-size: 14px;
+        }
+
+        .file-label span {
+            font-size: 14px;
+        }
+    }
