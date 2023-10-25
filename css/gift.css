@@ -469,7 +469,7 @@ input,input:focus {
     height: 22px;
     margin-right: 12px;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color:#ffffff;
     border: 2px;
     flex-shrink: 0;
 }
