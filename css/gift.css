@@ -101,7 +101,10 @@ input,input:focus {
     width: 100%;
     height: 100vh;
     padding: 113px 90px;
-    background-color: #eef0f4;
+    background-color: rgba(215, 225, 235, 0.6);
+    background-image: url("../img/gift-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .gift-wrapper__inner {
@@ -268,6 +271,7 @@ input,input:focus {
     font-size: 18px;
     font-weight: 400;
     line-height: 140%;
+    white-space: nowrap;
 
 }
 
@@ -330,10 +334,6 @@ input,input:focus {
     align-items: center;
 }
 
-.payment-card__type img {
-
-    object-fit: cover;
-}
 .payment-card__info {
     display: flex;
     flex-direction: column;
@@ -378,20 +378,32 @@ input,input:focus {
     font-weight: 600;
     line-height: 140%;
 }
-
+.cards-img {
+    display: block;
+    margin-right: 15px;
+    cursor: pointer;
+}
 
 
 /*.gift right styles*/
+
+
 .gift-inner__right {
     display: flex;
     flex-direction: column;
-
+    width: 100%;
+    max-width: 576px;
+    padding: 30px;
 }
+
+
 .gift-right__form {
     flex-grow: 1;
 }
 
 .gift-right__helper {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 496px;
     height: 190px;
@@ -400,6 +412,49 @@ input,input:focus {
     padding: 27px 34px;
 }
 
-.gift-right__helper h2 {
+.gift-right__helper div {
+    margin-bottom: 18px;
+}
+
+.gift-right__helper h2,p {
     text-align: center;
+}
+
+
+.gift-right__helper h2 {
+    color: #1e1640;
+    font-family: var(--unbounded-shrift);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 140%
+}
+
+.gift-right__helper p {
+    color: #1e1640;
+    font-family:var(--poppins-shrift);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.telegram__Link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 430px;
+    height: 54px;
+    border-radius: 100px;
+    background-color:#0e94dd;
+    padding: 13.5px;
+}
+.telegram__Link span {
+    margin-left: 18px;
+    color: #ffffff;
+    font-family: var(--poppins-shrift);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
 }

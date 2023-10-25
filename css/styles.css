@@ -105,6 +105,8 @@ input,input:focus {
     flex-grow: 1;
     height: 100vh;
     padding-top:36px;
+    padding-bottom: 36px;
+    overflow: auto;
 }
 
 .registration-main__inner  {
@@ -112,7 +114,6 @@ input,input:focus {
     margin-left: auto;
     margin-right: auto;
     max-width: 576px;
-    overflow: auto;
 }
 
 /*Registration main top*/
@@ -182,6 +183,7 @@ input,input:focus {
 .registration-tabs__list {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -189,6 +191,7 @@ input,input:focus {
 }
 .registration-tabs__item {
     cursor: pointer;
+    width: 30%;
 }
 
 .registration-tabs__item:hover span {
@@ -239,7 +242,6 @@ input,input:focus {
     font-size: 14px;
     font-weight: 400;
     line-height: 132%;
-    white-space: nowrap;
 }
 
 
@@ -305,6 +307,7 @@ input,input:focus {
 }
 
 .form-registration__label {
+    display: block;
     color: #48635b;
    font-family: var(--poppins-shrift);
     font-size: 16px;
