@@ -216,7 +216,7 @@ input,input:focus {
 
 
 .registration-tabs__item:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 35px;
 }
 
 .registration-tabs__symbol {
