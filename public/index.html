@@ -14,6 +14,7 @@
             rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -60,7 +61,7 @@
                                 <p>Ma'lumot kiritish</p>
                             </div>
                         </li>
-                        <li class="registration-tabs__item">
+                        <li class="registration-tabs__item registration-tabs__item--hint">
                             <div class="registration-tabs__inner">
                                     <span class="registration-tabs__symbol">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" fill="none">
@@ -71,7 +72,7 @@
                                 <p>Sovg'ani olish</p>
                             </div>
                         </li>
-                        <li class="registration-tabs__item">
+                        <li class="registration-tabs__item registration-tabs__item--hint">
                             <div class="registration-tabs__inner">
                                     <span class="registration-tabs__symbol">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" fill="none">
@@ -86,25 +87,31 @@
                 </div>
                 <!--          Tabs ends       -->
                 <form class="registration-form">
+                    <div class="registration-form__error"></div>
                     <label class="form-registration__label" for="name-input">Ism</label>
                     <div class="registration-form__wrapper">
                         <input class="registration-form__input" id="name-input" type="text" name="user-name"
-                               placeholder="Ismingizni kiriting" aria-hidden="true" required>
+                               placeholder="Ismingizni kiriting" aria-hidden="true">
                     </div>
-                    <label class="form-registration__label" for="number-input">Telefon raqami</label>
+
+                    <label class="form-registration__label" for="phone">Telefon raqami</label>
                     <div class="registration-form__wrapper">
-                        <input class="registration-form__input" id="number-input" type="tel" name="user-phonenumber"
-                               value="+998" min="9" max="9" aria-hidden="true" required>
+                        <input class="registration-form__input" type="tel" name="user-phonenumber"
+                               value="+998" id="phone">
                     </div>
 
                     <!--                     Stopped-->
-                    <label class="form-registration__label" for="course-select">Tarifni tanlang</label>
+                    <label class="form-registration__label" for="tariff-select">Tarifni tanlang</label>
                     <div class="registration-form__wrapper">
-                        <input class="registration-form__input" type="text" id="course-select">
+                        <select class="registration-form__input" id="tariff-select" value="3">
+                            <option value="1">Standard - 1 497 000 so'm</option>
+                            <option value="2">Premium - 1 497 000 so'm</option>
+                            <option value="3" selected>VIP - 1 497 000 so'm</option>
+                        </select>
                     </div>
                     <!--                    Stopped-->
 
-                    <button class="registration-main__button button " type="submit">
+                    <button class="registration-main__button button" id="submit-button" type="submit">
                         <span>davom etish</span>
                     </button>
                 </form>
@@ -114,20 +121,19 @@
 </div>
 <!--Modals-->
 <!--Gift modal-->
-<div class="modal-container ">
-    <div class="modal-wrapper">
+<div class="modal-container" data-modal-closer>
+    <div class="modal-wrapper" data-modal-closer>
         <div class="modal__content">
             <div class="modal__inner">
-                <h1>Bu sahifadagi kerakli ma'lumotlarni to'ldirib bo'lgach,<br> boshqa sahivalarga o'ta olasiz!</h1>
-                <strong>Iltimos bu sahifadagi ma'lumotlaringizni to'liq to'ldirib davom eting!....</strong>
+                <h1>Diqqat</h1>
+                <p>Ushbu sahifadagi ma'lumotlaringizni to'liq to'ldirib davom eting!....</p>
             </div>
-            <button class="button modal__button" type="button">
+            <button class="button modal__button" data-modal-closer>
                 <span>OK</span>
             </button>
         </div>
     </div>
 </div>
 
-<script src="js/scripts.js"></script>
 </body>
 </html>
