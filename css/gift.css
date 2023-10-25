@@ -411,6 +411,9 @@ input,input:focus {
     line-height: 132%;
 }
 
+.gift-selector-container {
+    margin-bottom: 30px;
+}
 
 
 .selector-label__container {
@@ -489,6 +492,35 @@ input,input:focus {
     margin-bottom: 30px;
 }
 
+.file-label {
+    width: 100%;
+    max-width: 496px;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    border: 1px dashed #bed4da;
+    background: #f3f7f8;
+}
+
+.file-label svg {
+    display: block;
+    margin-right: 18px;
+    color:var(--ink-color)
+}
+
+.file-label span {
+    color: #48635b;
+    font-family: var(--poppins-shrift);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 132%;
+}
+
+
+
+
 
 .selector-button {
     width: 100%;
@@ -502,6 +534,9 @@ input,input:focus {
     text-transform: uppercase;
     text-align: center;
 }
+
+
+
 
 
 
