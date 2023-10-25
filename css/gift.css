@@ -384,7 +384,6 @@ input,input:focus {
 }
 
 .payment-card__price span {
-
     color:var(--ink-color);
     font-family: var(--poppins-shrift);
     font-size: 18px;
@@ -749,7 +748,7 @@ input,input:focus {
     .selector-label__wrapper {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         width: 100%;
         height: 100%;
         max-width: 100%;
@@ -759,7 +758,7 @@ input,input:focus {
     .selector-label__inner--1,.selector-label__inner--2 {
         width: 100%;
         height: 100%;
-        max-width: calc(100% /2 - 18px);
+        max-width: 500px;
         border-radius: 12px;
         padding: 13px;
         background-color: #f3f7f8;
@@ -800,9 +799,14 @@ input,input:focus {
     .cards-img {
         margin-left: auto;
     }
+    .selector-label__container {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+    }
 }
 
-@media only screen and (max-width:1000px ) {
+@media only screen and (max-width:1100px ) {
     .inner-left__tariff h1 {
         font-size: 18px;
     }
@@ -823,5 +827,17 @@ input,input:focus {
 
     .payment-card__info span {
         font-size: 14px;
+    }
+
+    .payment-card__price span {
+        font-size: 16px;
+    }
+    .selector-label strong {
+        color: var(--black-color);
+        font-family: var(--poppins-shrift);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 132%;
+        white-space: nowrap;
     }
 }
