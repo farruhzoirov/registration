@@ -308,7 +308,7 @@ input,input:focus {
 }
 .payment-card__inner {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 18px;
 }
 
@@ -400,6 +400,51 @@ input,input:focus {
 .gift-right__form {
     flex-grow: 1;
 }
+
+.selector-label__container {
+    display: flex;
+}
+
+.selector-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selector-label__inner {
+    width: 100%;
+    max-width: 240px;
+    border-radius: 12px;
+    padding: 13px;
+    background-color: #f3f7f8;
+}
+
+.selector-label__inner:first-child {
+    margin-right: 18px;
+}
+
+.selector-label span {
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px;
+}
+
+.selector-label strong {
+    color: var(--black-color);
+    font-family: var(--poppins-shrift);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 132%;
+}
+
+
+
+
+
+
 
 .gift-right__helper {
     display: flex;
