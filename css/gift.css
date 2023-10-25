@@ -401,25 +401,49 @@ input,input:focus {
     flex-grow: 1;
 }
 
+.payment-purpose {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--some-text-color);
+    font-family: var(--poppins-shrift);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 132%;
+}
+
+
+
 .selector-label__container {
     display: flex;
 }
 
 .selector-label {
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
-.selector-label__inner {
+.selector-label__inner--1,.selector-label__inner--2 {
     width: 100%;
+    height: 100%;
     max-width: 240px;
     border-radius: 12px;
     padding: 13px;
     background-color: #f3f7f8;
+    cursor: pointer;
 }
 
-.selector-label__inner:first-child {
+.selector-label__wrapper {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 240px;
+    cursor: pointer;
+}
+
+.selector-label__wrapper:first-child {
     margin-right: 18px;
 }
 
@@ -441,6 +465,48 @@ input,input:focus {
 }
 
 
+.selector1-radio:checked  ~ .selector-label__container  .selector-label__wrapper .selector-label__inner--1 {
+    background-color: var(--ink-color);
+    color: #ffffff;
+}
+
+.selector2-radio:checked  ~ .selector-label__container  .selector-label__wrapper:nth-child(2) .selector-label__inner--2 {
+    background-color: var(--ink-color);
+    color: #ffffff;
+}
+
+.selector1-radio:checked  ~ .selector-label__container  .selector-label__wrapper .selector-label__inner--1 strong {
+    background-color: var(--ink-color);
+    color: #ffffff;
+}
+
+.selector2-radio:checked  ~ .selector-label__container  .selector-label__wrapper:nth-child(2) .selector-label__inner--2 strong {
+    background-color: var(--ink-color);
+    color: #ffffff;
+}
+
+.file-input-container {
+    margin-bottom: 30px;
+}
+
+
+.selector-button {
+    width: 100%;
+    max-width: 496px;
+    height: 54px;
+    color: #ffffff;
+    font-family: var(--poppins-shrift);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 132%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+
+
 
 
 
@@ -448,7 +514,7 @@ input,input:focus {
 
 .gift-right__helper {
     display: flex;
-    flex-direction: column;
+   flex-direction: column;
     width: 100%;
     max-width: 496px;
     height: 190px;

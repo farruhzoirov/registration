@@ -113,27 +113,44 @@
 
 <!--                  Rigt form-->
                   <form  class="gift-right__form">
-                      <span>To'lov maqsadi</span>
+                      <span class="payment-purpose">To'lov maqsadi</span>
                           <div class="gift-selector-container">
                               <div class="selector">
-                                  <input class="selector1-radio " id="selector1-radio"   type="radio" name="selector" value="1">
-                                  <input class="selector2-raido " id="selector2-radio"   type="radio" name="selector" value="2">
+                                  <input class="selector1-radio visually-hidden " id="selector1-radio"   type="radio" name="selector" value="To'liq to'ladim">
+                                  <input class="selector2-radio visually-hidden " id="selector2-radio"   type="radio" name="selector" value="Joy band qildim">
                             <div class="selector-label__container">
-                                <div class="selector-label__inner">
-                                    <label class="selector-label" for="selector1-radio">
-                                        <span></span>
-                                        <strong>To'liq to'ladim</strong>
-                                    </label>
+                                <div class="selector-label__wrapper">
+                                    <div class="selector-label__inner--1">
+                                        <label class="selector-label" for="selector1-radio">
+                                            <span></span>
+                                            <strong>To'liq to'ladim</strong>
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="selector-label__inner">
-                                    <label class="selector-label" for="selector2-radio">
-                                        <span></span>
-                                        <strong>Joy band qildim</strong>
-                                    </label>
+
+                                <div class="selector-label__wrapper">
+                                    <div class="selector-label__inner--2">
+                                        <label class="selector-label" for="selector2-radio">
+                                            <span></span>
+                                            <strong>Joy band qildim</strong>
+                                        </label>
+                                    </div>
                                 </div>
+
                             </div>
+
                               </div>
                           </div>
+<!--                      File upload input -->
+                      <div class="file-input-container">
+                          <input class="file-input" id="file-input" type="file">
+                          <div>
+                              <label for="file-input"></label>
+                          </div>
+                      </div>
+                      <button class="selector-button button" type="submit">
+                          <span>davom etish</span>
+                      </button>
                   </form>
 <!--               Rigth form ends-->
 
