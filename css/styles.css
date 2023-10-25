@@ -616,6 +616,9 @@ input,input:focus {
     .registration-tabs__inner p {
         font-size: 12px;
     }
+    .registration-tabs__item:not(:last-child) {
+        margin-right: 30px;
+    }
 
 }
 
@@ -648,7 +651,12 @@ input,input:focus {
         font-size: 12px;
     }
 
+
+
+
+
 }
+
 
 
 
