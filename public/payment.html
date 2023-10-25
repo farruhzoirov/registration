@@ -22,10 +22,10 @@
                 <div class="gift-inner_card">
                     <div class="inner-left-card__top">
                         <div class="inner-left__user">
-                            <div class="inner-left__userimg"></div>
+                            <div class="inner-left__userimg" id="userLetter"></div>
                             <div class="userinfo__wrapper">
-                                <strong>Farruh</strong>
-                                <span>+998 97 407 22 04</span>
+                                <strong id="userName"></strong>
+                                <span id="userPhone"></span>
                             </div>
                         </div>
                         <div class="time__wrapper">
@@ -42,12 +42,10 @@
                                 Supermiya Next Level
                             </h1>
                             <span>Tarif:</span>
-                            <span>STANDART</span>
+                            <span id="userTariff"></span>
                         </div>
                         <div class="inner-left__price">
-                                      <span>
-                                          <span>1,297,000</span>  so'm
-                                      </span>
+                            <span><span id="userTariffPrice"></span>  so'm</span>
                         </div>
                     </div>
                 </div>
@@ -56,7 +54,7 @@
                     <li class="gift-left__item">
                         <div class="left-text__wrapper">
                             <span class="item-numbers">1</span>
-                            <p>Quyidagi karta raqamlardan biriga to'lovni amalga  oshiring:</p>
+                            <p>Quyidagi karta raqamlardan biriga to'lovni amalga oshiring:</p>
                         </div>
                         <div class="left-item__inner">
                             <div class="payment-card">
@@ -69,7 +67,7 @@
                                         <strong>9860 1201 1413 5219</strong>
                                         <span>Farrux Zoirov</span>
                                     </div>
-                                    <img class="cards-img" src="img/copy-img.svg" width="24" height="24" alt="">
+                                    <img onclick="window.navigator.clipboard.writeText('9860 1201 1413 5219')" class="cards-img" src="img/copy-img.svg" width="24" height="24" alt="">
                                 </div>
                                 <div class="payment-card__price">
                                     <p>Narxi</p>
@@ -83,10 +81,10 @@
                                             srcset="img/uzcard-humo-img.png 1x, img/uzcard-humo-img@2x.png 2x">
                                       </span>
                                     <div class="payment-card__info">
-                                        <strong>9860 1201 1413 5219</strong>
+                                        <strong>9860 1201 1413 2333</strong>
                                         <span>Farrux Zoirov</span>
                                     </div>
-                                    <img class="cards-img" src="img/copy-img.svg" width="24" height="24" alt="">
+                                    <img onclick="window.navigator.clipboard.writeText('9860 1201 1413 2333')" class="cards-img" src="img/copy-img.svg" width="24" height="24" alt="">
                                 </div>
                                 <div class="payment-card__price">
                                     <p>Narxi</p>
@@ -98,7 +96,7 @@
                     <li class="gift-left__item">
                         <div class="left-text__wrapper">
                             <span class="item-numbers">2</span>
-                            <p>To'lovingiz muvaffaqiyatli amalga oshganini  tasdiqlovchi rasmni saqlab
+                            <p>To'lovingiz muvaffaqiyatli amalga oshganini tasdiqlovchi rasmni saqlab
                                 oling(screenshot).</p>
                         </div>
                     </li>
@@ -121,7 +119,8 @@
                             <div class="selector-label__container">
                                 <div class="selector-label__wrapper">
                                     <label class="selector-label__inner--1">
-                                        <input class="selector1-radio visually-hidden " id="selector1-radio" type="radio" name="selector" value="To'liq to'ladim">
+                                        <input class="selector1-radio visually-hidden " id="selector1-radio"
+                                               type="radio" name="selector" value="To'liq to'ladim">
                                         <span class="selector-label">
                                             <span></span>
                                             <strong>To'liq to'ladim</strong>
@@ -131,7 +130,8 @@
 
                                 <div class="selector-label__wrapper">
                                     <label class="selector-label__inner--2">
-                                        <input class="selector2-radio visually-hidden " id="selector2-radio" type="radio" name="selector" value="Joy band qildim">
+                                        <input class="selector2-radio visually-hidden " id="selector2-radio"
+                                               type="radio" name="selector" value="Joy band qildim">
                                         <span class="selector-label">
                                             <span></span>
                                             <strong>Joy band qildim</strong>
@@ -154,7 +154,7 @@
                             </label>
                         </div>
 
-<!--                        After file uploaded-->
+                        <!--                        After file uploaded-->
                         <div class="fileuploaded-wrapper">
                             <svg xmlns="http://www.w3.org/2000/svg" width="39" height="38" fill="none">
                                 <path fill="currentColor"
@@ -162,7 +162,7 @@
                             </svg>
                             <p></p>
                         </div>
-<!--                        After file uploaded-->
+                        <!--                        After file uploaded-->
                     </div>
                     <button class="selector-button button" type="submit">
                         <span>davom etish</span>

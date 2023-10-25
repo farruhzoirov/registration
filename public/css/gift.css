@@ -150,17 +150,20 @@ input, input:focus {
 }
 
 .inner-left__userimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 52px;
     height: 52px;
     margin-right: 12px;
     background-color: #d9d9d9;
     border-radius: 50%;
+    font-family: var(--unbounded-shrift);
 }
 
 .inner-left__user {
     display: flex;
     align-items: center;
-
 }
 
 
