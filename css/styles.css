@@ -400,8 +400,9 @@ input,input:focus {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    color: #ffffff;
+    font-size: 22px;
 }
-
 
 
 
@@ -425,11 +426,18 @@ input,input:focus {
         background-attachment: fixed;
     }
 
+    .container {
+        max-width: 1480px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .registration-main-title {
         font-size: 32px;
 
     }
-
 }
 
 @media only screen and (max-width: 540px) {
@@ -446,9 +454,7 @@ input,input:focus {
     .registration-main-form__title {
         font-size: 18px;
     }
-
 }
-
 
 
 @media only screen and (max-width: 510px) {
@@ -460,26 +466,22 @@ input,input:focus {
     .registration-main-form__title {
         font-size: 16px;
     }
-
 }
 
 @media only screen and (max-width: 490px) {
     .registration-main-title {
         font-size: 24px;
-
     }
 
     .registration-main-form__title {
         font-size: 16px;
     }
-
 }
 
 
 @media only screen and (max-width: 470px) {
     .registration-main-title {
         font-size: 24px;
-
     }
 
     .registration-main-form__title {
