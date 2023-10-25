@@ -26,7 +26,6 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     background-color: #ffffff;
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -615,7 +614,17 @@ input,input:focus {
     border-radius: 100px;
     background-color:#0e94dd;
     padding: 13.5px;
+    box-shadow: 0 0.3rem 0 0 rgba(14,148,221,0.4);
 }
+
+.telegram__Link:hover {
+    opacity: 0.8;
+}
+.telegram__Link:active {
+    opacity: 0.6;
+    transform: translateY(0.3rem);
+}
+
 .telegram__Link span {
     margin-left: 18px;
     color: #ffffff;
