@@ -14,7 +14,50 @@ export default () => {
         userPhoneElement.textContent = `+${phone?.slice(0, 3)} ${phone?.slice(3, 5)} ${phone?.slice(5, 8)} ${phone?.slice(8, 10)} ${phone?.slice(10, 12)}`
         userTariffElement.textContent = `${ tariff === '1' ? 'STANDARD' : tariff === '2' ? 'PREMIUM' : 'VIP' }`
         userTariffPriceElement.textContent = `${ tariff === '1' ? '897 000' : tariff === '2' ? '1 297 000' : ' 1 497 000' }`
+
+        // Payment screenshot
+        const fileInput = document.querySelector('#file-input');
+        const purposesLabels = document.querySelectorAll('.selector-radio');
+
+        let purpose = `To'liq to'ladim`
+        purposesLabels.forEach(label => {
+            label.addEventListener('change', e => {
+                purpose = e.currentTarget.getAttribute('data-value');
+            })
+        })
+
+        let file;
+        fileInput.addEventListener('change', e => {
+            file = fileInput.files[0];
+            fileName.textContent = file.name;
+        })
+
+        continueButton.addEventListener('click', async e => {
+            if (!file) {
+                alert(`To'lovni tasdiqlovchi skrinshot faylni yuklang`);
+                return;
+            }
+            const formData = new FormData();
+            formData.append('name', name);
+            formData.append('phone', phone);
+            formData.append('tariff', tariff === '1' ? 'STANDARD' : tariff === '2' ? 'PREMIUM' : 'VIP');
+            formData.append('purpose', purpose);
+            formData.append('img', file);
+
+            let response = await fetch('http://localhost:5000/upload-screenshot', {
+                method: 'POST',
+                body: formData
+            })
+
+            response = await response.json();
+
+            if (!response.ok) {
+                alert(response?.message);
+                return;
+            }
+
+            console.log(response);
+        })
     } catch (e) {
-        redirect('')
     }
 }

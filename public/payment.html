@@ -67,7 +67,8 @@
                                         <strong>9860 1201 1413 5219</strong>
                                         <span>Farrux Zoirov</span>
                                     </div>
-                                    <img onclick="window.navigator.clipboard.writeText('9860 1201 1413 5219')" class="cards-img" src="img/copy-img.svg" width="24" height="24" alt="">
+                                    <img onclick="window.navigator.clipboard.writeText('9860 1201 1413 5219')"
+                                         class="cards-img" src="img/copy-img.svg" width="24" height="24" alt="">
                                 </div>
                                 <div class="payment-card__price">
                                     <p>Narxi</p>
@@ -84,7 +85,8 @@
                                         <strong>9860 1201 1413 2333</strong>
                                         <span>Farrux Zoirov</span>
                                     </div>
-                                    <img onclick="window.navigator.clipboard.writeText('9860 1201 1413 2333')" class="cards-img" src="img/copy-img.svg" width="24" height="24" alt="">
+                                    <img onclick="window.navigator.clipboard.writeText('9860 1201 1413 2333')"
+                                         class="cards-img" src="img/copy-img.svg" width="24" height="24" alt="">
                                 </div>
                                 <div class="payment-card__price">
                                     <p>Narxi</p>
@@ -108,7 +110,6 @@
                     </li>
                 </ul>
             </div>
-
             <div class="gift-inner__right">
 
                 <!--                  Right form-->
@@ -117,54 +118,40 @@
                     <div class="gift-selector-container">
                         <div class="selector">
                             <div class="selector-label__container">
-                                <div class="selector-label__wrapper">
-                                    <label class="selector-label__inner--1">
-                                        <input class="selector1-radio visually-hidden " id="selector1-radio"
-                                               type="radio" name="selector" value="To'liq to'ladim">
-                                        <span class="selector-label">
+                                <label>
+                                    <input class="selector-radio visually-hidden " id="selector1-radio" data-value="To'liq to'ladim"
+                                           type="radio" name="selector"  checked>
+                                    <span class="selector-label">
                                             <span></span>
                                             <strong>To'liq to'ladim</strong>
                                         </span>
-                                    </label>
-                                </div>
+                                </label>
 
-                                <div class="selector-label__wrapper">
-                                    <label class="selector-label__inner--2">
-                                        <input class="selector2-radio visually-hidden " id="selector2-radio"
-                                               type="radio" name="selector" value="Joy band qildim">
-                                        <span class="selector-label">
+                                <label>
+                                    <input class="selector-radio visually-hidden " id="selector2-radio" data-value="Joy band qildim"
+                                           type="radio" name="selector" >
+                                    <span class="selector-label">
                                             <span></span>
                                             <strong>Joy band qildim</strong>
-                                        </span>
-                                    </label>
-                                </div>
+                                    </span>
+                                </label>
                             </div>
                         </div>
                     </div>
                     <!--                      File upload input -->
                     <div class="file-input-container">
-                        <input class="file-input visually-hidden" id="file-input" type="file">
+                        <input class="file-input visually-hidden" id="file-input" type="file" accept=".png, .jpg, .jpeg">
                         <div>
                             <label class="file-label" for="file-input">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="39" height="38" fill="none">
                                     <path fill="currentColor"
                                           d="M8.6 32.458c-.788 0-1.461-.28-2.022-.84a2.756 2.756 0 0 1-.84-2.022V8.404c0-.787.28-1.461.84-2.021.56-.561 1.234-.841 2.021-.841h13.763v2.375H8.6a.474.474 0 0 0-.35.137.474.474 0 0 0-.137.35v21.192c0 .142.046.259.137.35a.474.474 0 0 0 .35.137h21.193a.474.474 0 0 0 .35-.137.474.474 0 0 0 .137-.35V15.833h2.375v13.763c0 .787-.28 1.461-.84 2.021-.561.561-1.235.841-2.022.841H8.599ZM27.72 13.641v-3.167h-3.166V8.1h3.166V4.933h2.375v3.166h3.167v2.375h-3.167v3.167h-2.375Zm-16.838 12.88H27.63l-5.207-6.942-4.445 5.785-3.167-4.05-3.928 5.207Z"/>
                                 </svg>
-                                <span>Check rasmini yuklash</span>
+                                <span id="fileName">Check rasmini yuklash</span>
                             </label>
                         </div>
-
-                        <!--                        After file uploaded-->
-                        <div class="fileuploaded-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="38" fill="none">
-                                <path fill="currentColor"
-                                      d="M8.6 32.458c-.788 0-1.461-.28-2.022-.84a2.756 2.756 0 0 1-.84-2.022V8.404c0-.787.28-1.461.84-2.021.56-.561 1.234-.841 2.021-.841h13.763v2.375H8.6a.474.474 0 0 0-.35.137.474.474 0 0 0-.137.35v21.192c0 .142.046.259.137.35a.474.474 0 0 0 .35.137h21.193a.474.474 0 0 0 .35-.137.474.474 0 0 0 .137-.35V15.833h2.375v13.763c0 .787-.28 1.461-.84 2.021-.561.561-1.235.841-2.022.841H8.599ZM27.72 13.641v-3.167h-3.166V8.1h3.166V4.933h2.375v3.166h3.167v2.375h-3.167v3.167h-2.375Zm-16.838 12.88H27.63l-5.207-6.942-4.445 5.785-3.167-4.05-3.928 5.207Z"/>
-                            </svg>
-                            <p></p>
-                        </div>
-                        <!--                        After file uploaded-->
                     </div>
-                    <button class="selector-button button" type="submit">
+                    <button class="selector-button button" type="button" id="continueButton">
                         <span>davom etish</span>
                     </button>
                 </form>

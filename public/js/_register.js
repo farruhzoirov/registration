@@ -41,6 +41,5 @@ export default () => {
             redirect('payment.html');
         })
     } catch (e) {
-        console.log(e)
     }
 }
