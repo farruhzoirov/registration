@@ -1,4 +1,5 @@
 import redirect from './_redirect';
+import {_config} from "./_config";
 
 export default () => {
     try {
@@ -17,7 +18,9 @@ export default () => {
 
         // Payment screenshot
         const fileInput = document.querySelector('#file-input');
+        const fileNameDisplay = document.querySelector('#fileName');
         const purposesLabels = document.querySelectorAll('.selector-radio');
+        const continueButton = document.querySelector('#continueButton');
 
         let purpose = `To'liq to'ladim`
         purposesLabels.forEach(label => {
@@ -29,7 +32,7 @@ export default () => {
         let file;
         fileInput.addEventListener('change', e => {
             file = fileInput.files[0];
-            fileName.textContent = file.name;
+            fileNameDisplay.textContent = file.name;
         })
 
         continueButton.addEventListener('click', async e => {
@@ -44,7 +47,7 @@ export default () => {
             formData.append('purpose', purpose);
             formData.append('img', file);
 
-            let response = await fetch('http://localhost:5000/upload-screenshot', {
+            let response = await fetch(_config.HOST + 'upload-screenshot', {
                 method: 'POST',
                 body: formData
             })
@@ -56,7 +59,7 @@ export default () => {
                 return;
             }
 
-            console.log(response);
+            console.log(response)
         })
     } catch (e) {
     }

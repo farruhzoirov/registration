@@ -1,3 +1,5 @@
+import {_config} from "./_config";
+
 export default () => {
     try {
         if (window.location.href.includes('users')) {
@@ -7,7 +9,7 @@ export default () => {
             let users = [];
 
             async function getUsersList() {
-                let response = await fetch('http://localhost:5000/get-screenshots', {
+                let response = await fetch(_config.HOST + 'get-screenshots', {
                     method: 'GET',
                     headers: {
                         'Content-type': 'application/json'
@@ -46,8 +48,8 @@ export default () => {
                             </td>
                             <td>${ user.date }</td>
                             <td>
-                                <a href="http://localhost:5000/${ user?.img }" target="_blank">
-                                    <img width="50" src="http://localhost:5000/${ user?.img }" alt="">
+                                <a href="${ _config.HOST }${ user?.img }" target="_blank">
+                                    <img width="50" src="${ _config.HOST }${ user?.img }" alt="">
                                 </a>
                             </td>
                         </tr>
