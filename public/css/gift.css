@@ -211,7 +211,7 @@ input, input:focus {
 
 .time__wrapper div {
     width: 100%;
-    max-width: 85px;
+    min-width: 85px;
     height: 32px;
     padding: 6px 12px;
     border-radius: 50px;

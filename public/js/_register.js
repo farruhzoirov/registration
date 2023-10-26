@@ -35,7 +35,7 @@ export default () => {
             registerError.classList.remove('registration-form__error--show');
 
             localStorage.setItem('user', JSON.stringify({
-                name, phone, tariff
+                name, phone, tariff, time: new Date().getTime() + 900000
             }))
 
             redirect('payment.html');
