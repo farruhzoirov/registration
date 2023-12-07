@@ -198,7 +198,7 @@ input, input:focus {
     white-space: nowrap;
 }
 
-.registration-tabs__item:hover span {
+.registration-tabs__item:hover span, .selected-tab span {
     background-color: var(--ink-color);
 }
 
@@ -206,8 +206,8 @@ input, input:focus {
     color: #ffffff;
 }
 
-.registration-tabs__item:hover p {
-    color: var(--ink-color);
+.registration-tabs__item:hover p, .selected-tab p {
+    color: var(--ink-color) !important;
 }
 
 .registration-tabs__inner {
@@ -264,21 +264,18 @@ input, input:focus {
 
 
 .registration-main-form__top {
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
 }
 
 .registration-main-form__top div {
     width: 100%;
-    max-width: 180px;
-    height: 40px;
     padding: 8px 24px;
     border-radius: 50px;
     margin-bottom: 18px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--black-color);
+    text-align: center;
 }
 
 
@@ -345,6 +342,9 @@ input, input:focus {
     font-size: 16px;
     font-weight: 400;
     line-height: 132%;
+}
+
+select {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -754,21 +754,3 @@ input, input:focus {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

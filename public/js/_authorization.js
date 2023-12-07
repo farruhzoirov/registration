@@ -4,7 +4,7 @@ export default () => {
     try {
         const href = window.location.href;
         const user = JSON.parse(localStorage.getItem('user'));
-        const userNotStored = !user || !user?.time | !user?.name?.length || user?.phone?.length !== 12 || !['1', '2', '3'].includes(user?.tariff);
+        const userNotStored = !user || !user?.time || !user?.name?.length || user?.phone?.length !== 12 || !['1', '2', '3'].includes(user?.tariff);
 
         if (href.includes('payment.html')) {
             localStorage.removeItem('payed');
